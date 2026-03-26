@@ -1,0 +1,82 @@
+{
+  "pnf": "Informática",
+  "trayectos": [
+    {
+      "id": "arquitectura",
+      "titulo": "Arquitectura del Computador",
+      "nivel": "Técnico Universitario Básico",
+      "duracion": "2 Semestres",
+      "semestres": [
+        {
+          "id": "sem1",
+          "titulo": "Semestre I: Fundamentos y Componentes de la Máquina",
+          "filosofia": "Conocer, Tocar, Comprender",
+          "clases": [
+            {
+              "id": "sem1_clase1",
+              "titulo": "Clase 1: Evolución Histórica y Generalidades del Sistema Informático",
+              "descripcion": "Recorrido por los hitos tecnológicos desde el ábaco hasta la computadora moderna.",
+              "archivos": [
+                {
+                  "nombre": "Presentación de la clase",
+                  "url": "https://drive.google.com/..."
+                }
+              ],
+              "temas": [
+                {
+                  "id": "t1_1",
+                  "titulo": "Línea de tiempo colaborativa",
+                  "contenido": {
+                    "texto": "Construye con tus compañeros una línea de tiempo física en el aula usando imágenes y datos clave (Ábaco, ENIAC, IBM PC, dispositivos actuales).",
+                    "imagen": "Imagen/linea_tiempo.jpg",
+                    "audio": "audio/linea_tiempo.mp3"
+                  },
+                  "consideraciones": [
+                    "Usa material reciclado para la línea de tiempo.",
+                    "Cada grupo debe presentar una era histórica."
+                  ]
+                },
+                {
+                  "id": "t1_2",
+                  "titulo": "Video-análisis: Evolución de las computadoras",
+                  "contenido": {
+                    "texto": "Observa el documental y responde la guía de preguntas sobre las generaciones de computadoras.",
+                    "video": "https://youtu.be/XXXX",
+                    "quiz": {
+                      "pregunta": "¿Qué tecnología marcó la transición de la primera a la segunda generación?",
+                      "opciones": [
+                        "Transistores",
+                        "Válvulas de vacío",
+                        "Circuitos integrados",
+                        "Microprocesadores"
+                      ],
+                      "correcta": 0,
+                      "feedback": "¡Correcto! Los transistores reemplazaron a las válvulas de vacío, haciendo las computadoras más pequeñas y fiables."
+                    }
+                  },
+                  "consideraciones": [
+                    "El video está disponible en el canal del aula virtual.",
+                    "Las respuestas se entregan en formato digital."
+                  ]
+                },
+                {
+                  "id": "t1_3",
+                  "titulo": "Mapa conceptual: Entrada-Proceso-Salida (E-P-S)",
+                  "contenido": {
+                    "texto": "Construye un mapa conceptual con ejemplos cotidianos del ciclo E-P-S. Identifica entradas, procesos y salidas en un microondas, una calculadora y un mensaje de WhatsApp.",
+                    "imagen": "Imagen/mapa_eps.jpg",
+                    "audio": "audio/eps.mp3"
+                  },
+                  "consideraciones": [
+                    "Puede realizarse en papel o digital.",
+                    "Comparte tu mapa en el foro de la clase."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
