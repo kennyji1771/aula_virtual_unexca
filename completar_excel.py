@@ -1,20 +1,14 @@
 ﻿import pandas as pd
-import os
 
-# ========== DEFINICIÓN DE TODAS LAS CLASES Y TEMAS ==========
-# Estructura: lista de diccionarios, cada uno es una fila del Excel
-# Los campos siguen el mismo orden que la plantilla
-
+# ========== SEMESTRE I (ya existente) ==========
 filas = []
 
-# ========== SEMESTRE I ==========
 # Clase 1: Evolución Histórica
 clase1_id = "sem1_clase1"
 clase1_titulo = "Clase 1: Evolución Histórica y Generalidades del Sistema Informático"
 clase1_desc = "Recorrido por los hitos tecnológicos desde el ábaco hasta la computadora moderna."
 archivos1 = '[{"nombre":"Presentación de la clase","url":"https://drive.google.com/..."},{"nombre":"Línea de tiempo interactiva","url":"https://drive.google.com/..."}]'
 
-# Tema 1.1
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -40,7 +34,6 @@ filas.append({
     'QuizFeedback': '',
     'Consideraciones': 'Usa material reciclado para la línea de tiempo.|Cada grupo debe presentar una era histórica.'
 })
-# Tema 1.2
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -66,7 +59,6 @@ filas.append({
     'QuizFeedback': '¡Correcto! Los transistores reemplazaron a las válvulas de vacío, haciendo las computadoras más pequeñas y fiables.',
     'Consideraciones': 'El video está disponible en el canal del aula virtual.|Las respuestas se entregan en formato digital.'
 })
-# Tema 1.3
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -99,7 +91,6 @@ clase2_titulo = "Clase 2: Componentes del Hardware, Ensamblaje y Normas de Segur
 clase2_desc = "Identificación y manipulación de los componentes físicos de un computador. Normas de seguridad electrostática y técnicas de ensamblaje."
 archivos2 = '[{"nombre":"Guía de seguridad y herramientas","url":"https://drive.google.com/..."},{"nombre":"Video: Despiece y ensamblaje","url":"https://www.youtube.com/watch?v=YYYY"}]'
 
-# Tema 2.1
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -125,7 +116,6 @@ filas.append({
     'QuizFeedback': '',
     'Consideraciones': 'Toma notas de los pasos de seguridad.|Identifica al menos 5 componentes.'
 })
-# Tema 2.2
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -158,7 +148,6 @@ clase3_titulo = "Clase 3: Sistemas Numéricos y Representación de Datos"
 clase3_desc = "Estudio de los sistemas binario, octal, hexadecimal y su relación con el mundo digital. Conversiones y representación de datos en computadoras."
 archivos3 = '[{"nombre":"Tablas de conversión","url":"https://drive.google.com/..."},{"nombre":"Calculadora binaria en línea","url":"https://www.rapidtables.com/convert/number/binary-to-decimal.html"}]'
 
-# Tema 3.1
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -184,7 +173,6 @@ filas.append({
     'QuizFeedback': '',
     'Consideraciones': ''
 })
-# Tema 3.2
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -217,7 +205,6 @@ clase4_titulo = "Clase 4: Lógica Digital y Circuitos Combinacionales"
 clase4_desc = "Principios de álgebra booleana, compuertas lógicas y diseño de circuitos combinacionales. Introducción a la simulación con software."
 archivos4 = '[{"nombre":"Simulador Logisim","url":"https://sourceforge.net/projects/circuit/"},{"nombre":"Práctica: Tablas de verdad","url":"https://drive.google.com/..."}]'
 
-# Tema 4.1
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -243,7 +230,6 @@ filas.append({
     'QuizFeedback': '',
     'Consideraciones': ''
 })
-# Tema 4.2
 filas.append({
     'PNF': 'Informática',
     'TrayectoID': 'arquitectura',
@@ -270,16 +256,12 @@ filas.append({
     'Consideraciones': 'Verifica la tabla de verdad de cada compuerta.|Graba un video mostrando tu circuito funcionando.'
 })
 
-# ========== SEMESTRE II (se pueden agregar de forma similar) ==========
-# Como en el documento tienes las 4 clases del segundo semestre, las añadimos también.
-# Aquí solo pondré un ejemplo breve para que la estructura esté completa.
-# Puedes expandir con el contenido real que tienes en tus documentos.
-
-# Clase 5: Microprocesadores y Ciclo de Ejecución (ejemplo)
+# ========== SEMESTRE II ==========
+# Clase 5: Microprocesadores y Ciclo de Ejecución
 clase5_id = "sem2_clase1"
 clase5_titulo = "Clase 1: Microprocesadores y Ciclo de Ejecución de Instrucciones"
 clase5_desc = "Estructura interna de la CPU, ciclo fetch-decode-execute, arquitecturas CISC/RISC."
-archivos5 = '[{"nombre":"Simulador CPU","url":"https://www.cpusimulator.com/"}]'
+archivos5 = '[{"nombre":"Simulador CPU","url":"https://www.cpusimulator.com/"},{"nombre":"Documento: Ciclo de instrucción","url":"https://drive.google.com/..."}]'
 
 filas.append({
     'PNF': 'Informática',
@@ -300,16 +282,212 @@ filas.append({
     'ContenidoImagen': '',
     'ContenidoAudio': '',
     'ContenidoVideo': 'https://youtu.be/XXXX',
+    'QuizPregunta': '¿Cuál es la función de la Unidad de Control?',
+    'QuizOpciones': 'Ejecutar operaciones aritméticas|Coordinar las operaciones del procesador|Almacenar datos temporales|Gestionar la memoria',
+    'QuizCorrecta': '1',
+    'QuizFeedback': 'Correcto. La Unidad de Control dirige el flujo de instrucciones.',
+    'Consideraciones': 'Observa el video y anota las partes de la CPU.'
+})
+filas.append({
+    'PNF': 'Informática',
+    'TrayectoID': 'arquitectura',
+    'TrayectoTitulo': 'Arquitectura del Computador',
+    'TrayectoNivel': 'Técnico Universitario Básico',
+    'TrayectoDuracion': '2 Semestres',
+    'SemestreID': 'sem2',
+    'SemestreTitulo': 'Semestre II: Arquitectura Interna y Gestión de Recursos',
+    'SemestreFilosofia': 'Del Hardware al Sistema Vivo',
+    'ClaseID': clase5_id,
+    'ClaseTitulo': clase5_titulo,
+    'ClaseDescripcion': clase5_desc,
+    'ClaseArchivos': '',
+    'TemaID': 't5_2',
+    'TemaTitulo': 'Simulación del ciclo fetch-decode-execute',
+    'ContenidoTexto': 'Usa un simulador de CPU para ejecutar instrucciones paso a paso y observar el flujo.',
+    'ContenidoImagen': '',
+    'ContenidoAudio': '',
+    'ContenidoVideo': '',
     'QuizPregunta': '',
     'QuizOpciones': '',
     'QuizCorrecta': '',
     'QuizFeedback': '',
-    'Consideraciones': 'Identifica cada componente en un procesador real si es posible.'
+    'Consideraciones': 'Registra en un informe las instrucciones ejecutadas.'
 })
-# ... añade los demás temas de las clases del semestre II (según tu documento)
+
+# Clase 6: Jerarquía de Memoria
+clase6_id = "sem2_clase2"
+clase6_titulo = "Clase 2: Jerarquía y Tecnologías de Memorias"
+clase6_desc = "Pirámide de memoria, tipos de memoria (RAM, caché, ROM), memoria virtual."
+archivos6 = '[{"nombre":"Presentación memorias","url":"https://drive.google.com/..."}]'
+
+filas.append({
+    'PNF': 'Informática',
+    'TrayectoID': 'arquitectura',
+    'TrayectoTitulo': 'Arquitectura del Computador',
+    'TrayectoNivel': 'Técnico Universitario Básico',
+    'TrayectoDuracion': '2 Semestres',
+    'SemestreID': 'sem2',
+    'SemestreTitulo': 'Semestre II: Arquitectura Interna y Gestión de Recursos',
+    'SemestreFilosofia': 'Del Hardware al Sistema Vivo',
+    'ClaseID': clase6_id,
+    'ClaseTitulo': clase6_titulo,
+    'ClaseDescripcion': clase6_desc,
+    'ClaseArchivos': archivos6,
+    'TemaID': 't6_1',
+    'TemaTitulo': 'Pirámide física de memorias',
+    'ContenidoTexto': 'Construye una pirámide con cajas que representan registros, caché, RAM y disco.',
+    'ContenidoImagen': '',
+    'ContenidoAudio': '',
+    'ContenidoVideo': '',
+    'QuizPregunta': '¿Qué memoria es la más rápida?',
+    'QuizOpciones': 'Disco duro|RAM|Caché|Registros',
+    'QuizCorrecta': '3',
+    'QuizFeedback': 'Los registros son los más rápidos, seguidos por la caché.',
+    'Consideraciones': 'Explica por qué la jerarquía mejora el rendimiento.'
+})
+filas.append({
+    'PNF': 'Informática',
+    'TrayectoID': 'arquitectura',
+    'TrayectoTitulo': 'Arquitectura del Computador',
+    'TrayectoNivel': 'Técnico Universitario Básico',
+    'TrayectoDuracion': '2 Semestres',
+    'SemestreID': 'sem2',
+    'SemestreTitulo': 'Semestre II: Arquitectura Interna y Gestión de Recursos',
+    'SemestreFilosofia': 'Del Hardware al Sistema Vivo',
+    'ClaseID': clase6_id,
+    'ClaseTitulo': clase6_titulo,
+    'ClaseDescripcion': clase6_desc,
+    'ClaseArchivos': '',
+    'TemaID': 't6_2',
+    'TemaTitulo': 'Midiendo tiempos de acceso',
+    'ContenidoTexto': 'Usa herramientas del sistema para medir el tiempo de acceso a diferentes niveles de memoria.',
+    'ContenidoImagen': '',
+    'ContenidoAudio': '',
+    'ContenidoVideo': '',
+    'QuizPregunta': '',
+    'QuizOpciones': '',
+    'QuizCorrecta': '',
+    'QuizFeedback': '',
+    'Consideraciones': 'Documenta los resultados en una tabla.'
+})
+
+# Clase 7: Entrada/Salida y Buses
+clase7_id = "sem2_clase3"
+clase7_titulo = "Clase 3: Subsistema de Entrada/Salida y Transferencia de Información"
+clase7_desc = "Dispositivos de E/S, técnicas de transferencia (polling, interrupciones, DMA), buses de datos."
+archivos7 = '[{"nombre":"Diagrama de buses","url":"https://drive.google.com/..."}]'
+
+filas.append({
+    'PNF': 'Informática',
+    'TrayectoID': 'arquitectura',
+    'TrayectoTitulo': 'Arquitectura del Computador',
+    'TrayectoNivel': 'Técnico Universitario Básico',
+    'TrayectoDuracion': '2 Semestres',
+    'SemestreID': 'sem2',
+    'SemestreTitulo': 'Semestre II: Arquitectura Interna y Gestión de Recursos',
+    'SemestreFilosofia': 'Del Hardware al Sistema Vivo',
+    'ClaseID': clase7_id,
+    'ClaseTitulo': clase7_titulo,
+    'ClaseDescripcion': clase7_desc,
+    'ClaseArchivos': archivos7,
+    'TemaID': 't7_1',
+    'TemaTitulo': 'Simulación de transferencias (polling, interrupciones, DMA)',
+    'ContenidoTexto': 'En grupos, representen físicamente los roles (CPU, dispositivo, DMA) y simulen las tres técnicas.',
+    'ContenidoImagen': '',
+    'ContenidoAudio': '',
+    'ContenidoVideo': '',
+    'QuizPregunta': '¿Qué técnica libera a la CPU durante la transferencia de datos?',
+    'QuizOpciones': 'Polling|Interrupciones|DMA|Cache',
+    'QuizCorrecta': '2',
+    'QuizFeedback': 'DMA permite que los datos se transfieran sin intervención constante de la CPU.',
+    'Consideraciones': 'Dibuja un diagrama de cada técnica.'
+})
+filas.append({
+    'PNF': 'Informática',
+    'TrayectoID': 'arquitectura',
+    'TrayectoTitulo': 'Arquitectura del Computador',
+    'TrayectoNivel': 'Técnico Universitario Básico',
+    'TrayectoDuracion': '2 Semestres',
+    'SemestreID': 'sem2',
+    'SemestreTitulo': 'Semestre II: Arquitectura Interna y Gestión de Recursos',
+    'SemestreFilosofia': 'Del Hardware al Sistema Vivo',
+    'ClaseID': clase7_id,
+    'ClaseTitulo': clase7_titulo,
+    'ClaseDescripcion': clase7_desc,
+    'ClaseArchivos': '',
+    'TemaID': 't7_2',
+    'TemaTitulo': 'Identificación de buses en placa madre',
+    'ContenidoTexto': 'Observa una placa madre real e identifica los conectores de expansión (PCIe, SATA, etc.).',
+    'ContenidoImagen': '',
+    'ContenidoAudio': '',
+    'ContenidoVideo': '',
+    'QuizPregunta': '',
+    'QuizOpciones': '',
+    'QuizCorrecta': '',
+    'QuizFeedback': '',
+    'Consideraciones': 'Fotografía los conectores y etiquétalos.'
+})
+
+# Clase 8: BIOS, UEFI y Sistemas Operativos
+clase8_id = "sem2_clase4"
+clase8_titulo = "Clase 4: El Puente Software-Hardware: BIOS, UEFI y Sistemas Operativos"
+clase8_desc = "Configuración de BIOS/UEFI, particionamiento de discos, instalación de sistemas operativos."
+archivos8 = '[{"nombre":"Guía de instalación Ubuntu","url":"https://ubuntu.com/tutorials"},{"nombre":"Manual de VirtualBox","url":"https://www.virtualbox.org/manual"}]'
+
+filas.append({
+    'PNF': 'Informática',
+    'TrayectoID': 'arquitectura',
+    'TrayectoTitulo': 'Arquitectura del Computador',
+    'TrayectoNivel': 'Técnico Universitario Básico',
+    'TrayectoDuracion': '2 Semestres',
+    'SemestreID': 'sem2',
+    'SemestreTitulo': 'Semestre II: Arquitectura Interna y Gestión de Recursos',
+    'SemestreFilosofia': 'Del Hardware al Sistema Vivo',
+    'ClaseID': clase8_id,
+    'ClaseTitulo': clase8_titulo,
+    'ClaseDescripcion': clase8_desc,
+    'ClaseArchivos': archivos8,
+    'TemaID': 't8_1',
+    'TemaTitulo': 'Explorando la BIOS/UEFI',
+    'ContenidoTexto': 'Accede a la configuración del firmware y explora las opciones de arranque, fecha/hora, etc.',
+    'ContenidoImagen': '',
+    'ContenidoAudio': '',
+    'ContenidoVideo': '',
+    'QuizPregunta': '¿Qué tecnología reemplazó a la BIOS tradicional?',
+    'QuizOpciones': 'UEFI|CMOS|POST|EEPROM',
+    'QuizCorrecta': '0',
+    'QuizFeedback': 'UEFI (Unified Extensible Firmware Interface) es el estándar actual.',
+    'Consideraciones': 'Toma capturas de las pantallas de la BIOS/UEFI.'
+})
+filas.append({
+    'PNF': 'Informática',
+    'TrayectoID': 'arquitectura',
+    'TrayectoTitulo': 'Arquitectura del Computador',
+    'TrayectoNivel': 'Técnico Universitario Básico',
+    'TrayectoDuracion': '2 Semestres',
+    'SemestreID': 'sem2',
+    'SemestreTitulo': 'Semestre II: Arquitectura Interna y Gestión de Recursos',
+    'SemestreFilosofia': 'Del Hardware al Sistema Vivo',
+    'ClaseID': clase8_id,
+    'ClaseTitulo': clase8_titulo,
+    'ClaseDescripcion': clase8_desc,
+    'ClaseArchivos': '',
+    'TemaID': 't8_2',
+    'TemaTitulo': 'Particionamiento e instalación de sistemas operativos',
+    'ContenidoTexto': 'Usa una máquina virtual para crear particiones (MBR y GPT) e instalar un sistema operativo libre.',
+    'ContenidoImagen': '',
+    'ContenidoAudio': '',
+    'ContenidoVideo': '',
+    'QuizPregunta': '',
+    'QuizOpciones': '',
+    'QuizCorrecta': '',
+    'QuizFeedback': '',
+    'Consideraciones': 'Documenta el proceso con capturas de pantalla.'
+})
 
 # ========== GENERAR EL ARCHIVO EXCEL ==========
 df = pd.DataFrame(filas)
 df.to_excel('estructura_curso.xlsx', sheet_name='Datos', index=False)
 
-print("✅ Archivo estructura_curso.xlsx generado con todas las clases y temas.")
+print("✅ Archivo estructura_curso.xlsx generado con todas las clases y temas (ambos semestres).")
+print(f"   Total de filas: {len(df)}")

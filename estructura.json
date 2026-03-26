@@ -210,6 +210,10 @@
                 {
                   "nombre": "Simulador CPU",
                   "url": "https://www.cpusimulator.com/"
+                },
+                {
+                  "nombre": "Documento: Ciclo de instrucción",
+                  "url": "https://drive.google.com/..."
                 }
               ],
               "temas": [
@@ -218,10 +222,167 @@
                   "titulo": "Analogía del chef en la cocina",
                   "contenido": {
                     "texto": "La CPU es el chef, la ALU cocina, la Unidad de Control sigue la receta, los Registros son la mesa de trabajo.",
-                    "video": "https://youtu.be/XXXX"
+                    "video": "https://youtu.be/XXXX",
+                    "quiz": {
+                      "pregunta": "¿Cuál es la función de la Unidad de Control?",
+                      "opciones": [
+                        "Ejecutar operaciones aritméticas",
+                        "Coordinar las operaciones del procesador",
+                        "Almacenar datos temporales",
+                        "Gestionar la memoria"
+                      ],
+                      "correcta": 1,
+                      "feedback": "Correcto. La Unidad de Control dirige el flujo de instrucciones."
+                    }
                   },
                   "consideraciones": [
-                    "Identifica cada componente en un procesador real si es posible."
+                    "Observa el video y anota las partes de la CPU."
+                  ]
+                },
+                {
+                  "id": "t5_2",
+                  "titulo": "Simulación del ciclo fetch-decode-execute",
+                  "contenido": {
+                    "texto": "Usa un simulador de CPU para ejecutar instrucciones paso a paso y observar el flujo."
+                  },
+                  "consideraciones": [
+                    "Registra en un informe las instrucciones ejecutadas."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sem2_clase2",
+              "titulo": "Clase 2: Jerarquía y Tecnologías de Memorias",
+              "descripcion": "Pirámide de memoria, tipos de memoria (RAM, caché, ROM), memoria virtual.",
+              "archivos": [
+                {
+                  "nombre": "Presentación memorias",
+                  "url": "https://drive.google.com/..."
+                }
+              ],
+              "temas": [
+                {
+                  "id": "t6_1",
+                  "titulo": "Pirámide física de memorias",
+                  "contenido": {
+                    "texto": "Construye una pirámide con cajas que representan registros, caché, RAM y disco.",
+                    "quiz": {
+                      "pregunta": "¿Qué memoria es la más rápida?",
+                      "opciones": [
+                        "Disco duro",
+                        "RAM",
+                        "Caché",
+                        "Registros"
+                      ],
+                      "correcta": 3,
+                      "feedback": "Los registros son los más rápidos, seguidos por la caché."
+                    }
+                  },
+                  "consideraciones": [
+                    "Explica por qué la jerarquía mejora el rendimiento."
+                  ]
+                },
+                {
+                  "id": "t6_2",
+                  "titulo": "Midiendo tiempos de acceso",
+                  "contenido": {
+                    "texto": "Usa herramientas del sistema para medir el tiempo de acceso a diferentes niveles de memoria."
+                  },
+                  "consideraciones": [
+                    "Documenta los resultados en una tabla."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sem2_clase3",
+              "titulo": "Clase 3: Subsistema de Entrada/Salida y Transferencia de Información",
+              "descripcion": "Dispositivos de E/S, técnicas de transferencia (polling, interrupciones, DMA), buses de datos.",
+              "archivos": [
+                {
+                  "nombre": "Diagrama de buses",
+                  "url": "https://drive.google.com/..."
+                }
+              ],
+              "temas": [
+                {
+                  "id": "t7_1",
+                  "titulo": "Simulación de transferencias (polling, interrupciones, DMA)",
+                  "contenido": {
+                    "texto": "En grupos, representen físicamente los roles (CPU, dispositivo, DMA) y simulen las tres técnicas.",
+                    "quiz": {
+                      "pregunta": "¿Qué técnica libera a la CPU durante la transferencia de datos?",
+                      "opciones": [
+                        "Polling",
+                        "Interrupciones",
+                        "DMA",
+                        "Cache"
+                      ],
+                      "correcta": 2,
+                      "feedback": "DMA permite que los datos se transfieran sin intervención constante de la CPU."
+                    }
+                  },
+                  "consideraciones": [
+                    "Dibuja un diagrama de cada técnica."
+                  ]
+                },
+                {
+                  "id": "t7_2",
+                  "titulo": "Identificación de buses en placa madre",
+                  "contenido": {
+                    "texto": "Observa una placa madre real e identifica los conectores de expansión (PCIe, SATA, etc.)."
+                  },
+                  "consideraciones": [
+                    "Fotografía los conectores y etiquétalos."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sem2_clase4",
+              "titulo": "Clase 4: El Puente Software-Hardware: BIOS, UEFI y Sistemas Operativos",
+              "descripcion": "Configuración de BIOS/UEFI, particionamiento de discos, instalación de sistemas operativos.",
+              "archivos": [
+                {
+                  "nombre": "Guía de instalación Ubuntu",
+                  "url": "https://ubuntu.com/tutorials"
+                },
+                {
+                  "nombre": "Manual de VirtualBox",
+                  "url": "https://www.virtualbox.org/manual"
+                }
+              ],
+              "temas": [
+                {
+                  "id": "t8_1",
+                  "titulo": "Explorando la BIOS/UEFI",
+                  "contenido": {
+                    "texto": "Accede a la configuración del firmware y explora las opciones de arranque, fecha/hora, etc.",
+                    "quiz": {
+                      "pregunta": "¿Qué tecnología reemplazó a la BIOS tradicional?",
+                      "opciones": [
+                        "UEFI",
+                        "CMOS",
+                        "POST",
+                        "EEPROM"
+                      ],
+                      "correcta": 0,
+                      "feedback": "UEFI (Unified Extensible Firmware Interface) es el estándar actual."
+                    }
+                  },
+                  "consideraciones": [
+                    "Toma capturas de las pantallas de la BIOS/UEFI."
+                  ]
+                },
+                {
+                  "id": "t8_2",
+                  "titulo": "Particionamiento e instalación de sistemas operativos",
+                  "contenido": {
+                    "texto": "Usa una máquina virtual para crear particiones (MBR y GPT) e instalar un sistema operativo libre."
+                  },
+                  "consideraciones": [
+                    "Documenta el proceso con capturas de pantalla."
                   ]
                 }
               ]
